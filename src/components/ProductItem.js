@@ -13,7 +13,7 @@ const colorConfigs = {
 
 export default function ProductItem({ product }) {
   const furnitureStyles = product.furniture_style.map(style => (
-    <Tag color={colorConfigs[style]}>{style}</Tag>
+    <Tag color={colorConfigs[style]} key={style}>{style}</Tag>
   ));
 
   const title = (
