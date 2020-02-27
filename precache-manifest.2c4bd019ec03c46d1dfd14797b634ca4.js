@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "383f7ff5852550f76ca60b91301fba3a",
+    "revision": "22179c0b910fe2a7292e00d485c0f507",
     "url": "/furniture-finder/index.html"
   },
   {
-    "revision": "5b72cbdcdcff0533a7e7",
+    "revision": "902d6c84285bd1be26c2",
     "url": "/furniture-finder/static/css/2.d88ce3aa.chunk.css"
   },
   {
-    "revision": "42801eea6a3bd6409241",
+    "revision": "bf8c35e9cc8f68548ee0",
     "url": "/furniture-finder/static/css/main.02b5d264.chunk.css"
   },
   {
-    "revision": "5b72cbdcdcff0533a7e7",
-    "url": "/furniture-finder/static/js/2.b75d894e.chunk.js"
+    "revision": "902d6c84285bd1be26c2",
+    "url": "/furniture-finder/static/js/2.4f0bec74.chunk.js"
   },
   {
     "revision": "96219bc210d065416bcec57f9037d9d9",
-    "url": "/furniture-finder/static/js/2.b75d894e.chunk.js.LICENSE.txt"
+    "url": "/furniture-finder/static/js/2.4f0bec74.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "42801eea6a3bd6409241",
-    "url": "/furniture-finder/static/js/main.2b30aa66.chunk.js"
+    "revision": "bf8c35e9cc8f68548ee0",
+    "url": "/furniture-finder/static/js/main.61e9f960.chunk.js"
   },
   {
     "revision": "053d0ca55247a158a84f",
