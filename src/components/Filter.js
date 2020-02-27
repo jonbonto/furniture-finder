@@ -1,5 +1,5 @@
 import React from "react";
-import { Select, Row, Col, Tag } from "antd";
+import { Select, Row, Col } from "antd";
 import { useFilter } from "../context/filtered-context";
 
 const { Option } = Select;

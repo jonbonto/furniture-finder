@@ -4,12 +4,14 @@ import _ from "lodash";
 import ProductList from "./ProductList";
 import { filterByStyle, filterByDelivery } from "../helpers";
 import { useFilter } from "../context/filtered-context";
+import { useSearch } from "../context/search-context";
 
 export default function FilteredList() {
   const [products, setProducts] = useState([]);
 
+  const { search } = useSearch()
   const { stylesSelected, deliveredTimeSelected } = useFilter() 
-
+  
   useEffect(() => {
     const getProducts = async () => {
       try {
@@ -28,6 +30,12 @@ export default function FilteredList() {
   }, []);
 
   let filteredProducts = products;
+
+  if (search) {
+    filteredProducts = filteredProducts.filter(product =>
+      product.name.toLowerCase().includes(search.toLowerCase())
+    );
+  }
 
   if (!_.isEmpty(stylesSelected)) {
     filteredProducts = filteredProducts.filter(product =>
