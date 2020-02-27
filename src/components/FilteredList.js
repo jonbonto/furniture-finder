@@ -14,7 +14,7 @@ export default function FilteredList() {
     const getProducts = async () => {
       try {
         const res = await fetch(
-          "http://www.mocky.io/v2/5c9105cb330000112b649af8"
+          "https://www.mocky.io/v2/5c9105cb330000112b649af8"
         );
         const resJson = await res.json();
         const products = resJson.products;
