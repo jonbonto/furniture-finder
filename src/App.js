@@ -29,7 +29,7 @@ function App() {
           </div>
           <Filter />
         </Header>
-        <Content style={{ padding: "150px 50px 50px 50px" }}>
+        <Content style={{ padding: "150px 50px 50px 50px", minHeight: "100vh" }}>
           <FilteredList />
         </Content>
       </Layout>

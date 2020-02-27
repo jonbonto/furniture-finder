@@ -20,7 +20,7 @@ const deliveredTimesConfig = [
   { id: 1, start: 1, end: 8, label: "1 week" },
   { id: 2, start: 8, end: 15, label: "2 week" },
   { id: 3, start: 15, end: 30, label: "1 month" },
-  { id: 4, start: 31, end: Number.MAX_SAFE_INTEGER, label: "months" }
+  { id: 4, start: 31, end: Number.MAX_SAFE_INTEGER, label: "& more" }
 ];
 
 const deliveredTimeOptions = deliveredTimesConfig.map(dt => (
