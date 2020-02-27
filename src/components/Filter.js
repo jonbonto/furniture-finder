@@ -41,20 +41,20 @@ export default function Filter() {
 
   return (
     <Row gutter={16}>
-      <Col sm={24} md={12}>
+      <Col xs={24} sm={12}>
         <Select
           mode="multiple"
-          style={{ width: "100%" }}
+          className="filter"
           placeholder="Furniture Style"
           onChange={handleChangeStyle}
         >
           {optionsStyle}
         </Select>
       </Col>
-      <Col sm={24} md={12}>
+      <Col xs={24} sm={12}>
         <Select
           mode="multiple"
-          style={{ width: "100%" }}
+          className="filter"
           placeholder="Delivery Time"
           onChange={handleChangeTime}
         >

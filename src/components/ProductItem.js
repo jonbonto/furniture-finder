@@ -13,26 +13,21 @@ const colorConfigs = {
 
 export default function ProductItem({ product }) {
   const furnitureStyles = product.furniture_style.map(style => (
-    <Tag color={colorConfigs[style]} key={style}>{style}</Tag>
+    <Tag color={colorConfigs[style]} key={style}>
+      {style}
+    </Tag>
   ));
 
-  const title = (
-    <div className="product-title">
-      <h3>{product.name}</h3>
-      <span>{product.price}</span>
-    </div>
-  );
   return (
     <Card
-      title={title}
+      title={product.name}
+      extra={product.price}
       headStyle={{ border: "none" }}
-      bodyStyle={{ paddingTop: 0, minHeight: 202 }}
+      bodyStyle={{ paddingTop: 0 }}
     >
       <Paragraph>{product.description}</Paragraph>
-      <div className="product-styles">
-        {furnitureStyles}
-      </div>
-      <div className="product-delivery-time">
+      <div className="product-footer">
+        <div className="product-styles">{furnitureStyles}</div>
         <Text>{product.delivery_time} days</Text>
       </div>
     </Card>
